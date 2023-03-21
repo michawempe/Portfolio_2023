@@ -24,6 +24,8 @@ body {
   background-color: var(--bg-color);
   width: calc(100vw - 80px);
   margin: auto;
+  background-color: blue; 
+  height: 300px" class="centeredBody"
   /* display: flex;
   justify-content: center; */
 }
