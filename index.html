@@ -15,380 +15,378 @@
   </head>
 
   <body>
-    <div style="background-color: blue; height: 300px" class="centeredBody">
-      <!-- <div id="nav">
-        <a id="logo" href="#homeContainer">Micha Wempe</a>
-        <a href="#homeContainer">Home</a>
-        <a href="#projectsContainer">Projects</a>
-        <a href="#aboutContainerCenter">About</a>
-        <a href="#contactContainer">Contact</a>
-        <a href="#">de | en</a>
+    <div id="nav">
+      <a id="logo" href="#homeContainer">Micha Wempe</a>
+      <a href="#homeContainer">Home</a>
+      <a href="#projectsContainer">Projects</a>
+      <a href="#aboutContainerCenter">About</a>
+      <a href="#contactContainer">Contact</a>
+      <a href="#">de | en</a>
+    </div>
+
+    <div id="homeContainer" class="container">
+      <h1 id="homeHeadline">Hallo, ich bin Micha Wempe, ein Kommunikationsdesigner aus Mainz.</h1>
+      <p id="homeTextOne" class="shortText">
+        Ich habe ein Auge für innovative Lösungen und ansprechende Designs. Dabei konzentrierte ich mich bisher auf digitale Projekte, habe aber auch viel Erfahrung im Branding und Corporate Design.
+      </p>
+      <p id="homeTextTwo" class="shortText">Suche nach einem Job</p>
+    </div>
+
+    <div id="projectsContainer" class="container">
+      <div id="thumbnailImage">
+        <img class="thumbImage" src="images/AAAREA_2.jpeg" />
+        <img class="thumbImage" src="images/Showcase_01.png" />
+        <img class="thumbImage" src="images/ViSyn_1.png" />
+        <img class="thumbImage" src="images/matrix42_Image1.jpeg" />
+        <img class="thumbImage" src="images/Kuscheljunkie_1.png" />
+        <img class="thumbImage" src="images/MischMit_1.png" />
+        <img class="thumbImage" src="images/ConCon_7.png" />
       </div>
 
-      <div id="homeContainer" class="container">
-        <h1 id="homeHeadline">Hallo, ich bin Micha Wempe, ein Kommunikationsdesigner aus Mainz.</h1>
-        <p id="homeTextOne" class="shortText">
-          Ich habe ein Auge für innovative Lösungen und ansprechende Designs. Dabei konzentrierte ich mich bisher auf digitale Projekte, habe aber auch viel Erfahrung im Branding und Corporate Design.
+      <div id="projectBoxContainer">
+        <div class="projectBox" id="aaarea">
+          <h1>AAAREA Installation</h1>
+          <div class="projectKeywords">
+            <a>Animation</a>
+            <a>Installation</a>
+          </div>
+        </div>
+
+        <div class="projectBox" id="portfolio">
+          <h1>Showcase Portfolio Website</h1>
+          <div class="projectKeywords">
+            <a>Website</a>
+            <a>Portfolio</a>
+          </div>
+        </div>
+
+        <div class="projectBox" id="viSyn">
+          <h1>ViSyn – Design Prozess</h1>
+          <div class="projectKeywords">
+            <a>Corporate Design</a>
+            <a>Research</a>
+            <a>KI</a>
+          </div>
+        </div>
+
+        <div class="projectBox" id="dww">
+          <h1>Digital Workspace World</h1>
+          <div class="projectKeywords">
+            <a>3D</a>
+            <a>Keyvisual</a>
+          </div>
+        </div>
+
+        <div class="projectBox" id="hunde">
+          <h1>Hunderettung Kamagne</h1>
+          <div class="projectKeywords">
+            <a>3D</a>
+            <a>Kampanie</a>
+            <a>Plakate</a>
+          </div>
+        </div>
+
+        <div class="projectBox" id="mischMit">
+          <h1>Misch Mit! Kampanie</h1>
+          <div class="projectKeywords">
+            <a>Corporate Design</a>
+            <a>Bierdeckel</a>
+          </div>
+        </div>
+
+        <div class="projectBox" id="conCon">
+          <h1>CONCON x KI</h1>
+          <div class="projectKeywords">
+            <a>Corporate Design</a>
+            <a>KI</a>
+            <a>Event Design</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projectPopUpContainer" class="closed">
+      <img src="images/cross.svg" class="cross" onclick="closePopUp()" />
+
+      <div id="projectPopUpLeft">
+        <section class="projectTextBox closed" class="aaareaSection">
+          <video class="projectImage" muted autoplay loop>
+            <source src="images/AAAREA_1.mp4" type="video/mp4" />
+          </video>
+          <img class="projectImage" src="images/AAAREA_2.jpeg" />
+          <img class="projectImage" src="images/AAAREA_3.jpeg" />
+        </section>
+
+        <section class="projectTextBox closed" class="portfolioSection">
+          <img class="projectImage" src="images/Showcase_01.png" />
+          <img class="projectImage" src="images/Showcase_02.png" />
+          <img class="projectImage" src="images/Showcase_03.png" />
+          <video class="projectImage" muted autoplay loop>
+            <source src="images/Showcase_04.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <section class="projectTextBox closed" class="viSynSection">
+          <img class="projectImage" src="images/ViSyn_1.png" />
+          <img class="projectImage" src="images/ViSyn_2.png" />
+          <img class="projectImage" src="images/ViSyn_3.mov" />
+          <img class="projectImage" src="images/ViSyn_4.png" />
+          <img class="projectImage" src="images/ViSyn_5.png" />
+        </section>
+
+        <section class="projectTextBox closed" class="dwwSection">
+          <img class="projectImage" src="images/matrix42_Image1.jpeg" />
+          <img class="projectImage" src="images/matrix42_Image2.jpeg" />
+          <img class="projectImage" src="images/matrix42_Image3.jpeg" />
+          <img class="projectImage" src="images/matrix42_Image4.jpeg" />
+          <img class="projectImage" src="images/matrix42_Image5.jpeg" />
+        </section>
+
+        <section class="projectTextBox closed" class="hundeSection">
+          <img class="projectImage" src="images/Kuscheljunkie_1.png" />
+          <img class="projectImage" src="images/Kuscheljunkie_2.png" />
+          <img class="projectImage" src="images/Kuscheljunkie_3.png" />
+        </section>
+
+        <section class="projectTextBox closed" class="mischMitSection">
+          <img class="projectImage" src="images/MischMit_1.png" />
+          <img class="projectImage" src="images/MischMit_2.png" />
+          <img class="projectImage" src="images/MischMit_3.png" />
+          <img class="projectImage" src="images/MischMit_4.png" />
+        </section>
+
+        <section class="projectTextBox closed" class="conConSection">
+          <video class="projectImage" muted autoplay loop>
+            <source src="images/ConCon_1.mp4" type="video/mp4" />
+          </video>
+          <video class="projectImage" muted autoplay loop>
+            <source src="images/ConCon_2.mp4" type="video/mp4" />
+          </video>
+          <video class="projectImage" muted autoplay loop>
+            <source src="images/ConCon_3.mp4" type="video/mp4" />
+          </video>
+          <video class="projectImage" muted autoplay loop>
+            <source src="images/ConCon_4.mp4" type="video/mp4" />
+          </video>
+          <img class="projectImage" src="images/ConCon_5.png" />
+          <img class="projectImage" src="images/ConCon_6.png" />
+          <img class="projectImage" src="images/ConCon_7.png" />
+          <img class="projectImage" src="images/ConCon_8.MOV" />
+        </section>
+      </div>
+
+      <div id="projectPopUpRight">
+        <section class="projectTextBox closed" class="aaareaSection">
+          <h1 class="projectHeadline">AAAREA Installation</h1>
+
+          <div class="projectKeywords projectKeywordsText">
+            <a>Animation</a>
+            <a>Installation</a>
+          </div>
+
+          <p class="projectText">
+            Für AAAREA durfte ich eine große Red Carpet Installation vor der Alten Oper in Frankfurt am Main erstellen. Das Projekt ist bei der Arbeit beim Nordisk Büro entstanden und zielte darauf
+            ab, für die neue Event-Plattform AAAREA zu werben. AAAREA lief während der Fashion Week in Frankfurt und präsentierte dabei viele interdisziplinäre und kollaborative Formate, um die
+            neuesten Trends in der Mode zu präsentieren. <br />
+
+            Die Installation wurde auf dem roten Teppich der Markengala platziert und zog die Aufmerksamkeit der Gäste auf sich. Mit einem eindrucksvollen Design und auffälligen Details wurde die
+            Installation zum Blickfang.<br />
+
+            Meine Fähigkeiten im Bereich der Event-Gestaltung und des Markenmarketings wurden dadurch vertieft.
+          </p>
+          <div class="awards">
+            <img src="images/ADC_Logo.svg" />
+            <img src="images/ADC_Logo.svg" />
+            <img src="images/red_dot_winner.png" />
+          </div>
+        </section>
+
+        <section class="projectTextBox closed" class="portfolioSection">
+          <h1 class="projectHeadline">Showcase Portfolio Website</h1>
+
+          <div class="projectKeywords projectKeywordsText">
+            <a>Website</a>
+            <a>Portfolio</a>
+          </div>
+
+          <p class="projectText">
+            Bei diesem Projekt habe ich eine immersive Portfolio Website erstellt, die sich an einem Ausstellungsraum inspiriert. Die Idee hinter dem Design war es, die eigenen Arbeiten in einem Raum
+            zu präsentieren, in dem sich der Nutzer in seiner eigenen Geschwindigkeit bewegen kann. Die Umsetzung erfolgte mithilfe von 3D Scenen, die es der Kamera ermöglichen, durch das Projekt zu
+            navigieren. Die Geschwindigkeit des Navigierens wird durch das Scrollen der Nutzer*innen bestimmt. Auf diese Weise können die Nutzer*innen sich schnell oder langsam durch die Projekte
+            bewegen oder anhalten, um sich bestimmte Teile des Projekts genauer anzusehen.
+          </p>
+        </section>
+
+        <section class="projectTextBox closed" class="viSynSection">
+          <h1 class="projectHeadline">ViSyn – Design Prozess</h1>
+
+          <div class="projectKeywords projectKeywordsText">
+            <a>Corporate Design</a>
+            <a>Research</a>
+            <a>KI</a>
+          </div>
+
+          <p class="projectText">
+            Es gibt viele Programme, die fachfremden Menschen das Gestalten verschiedener Medien vereinfachen möchten. Meistens müssen die Nutzer*innen dabei trotzdem viele wichtige
+            Gestaltungsentscheidungen treffen. Das möchte ich mit diesem Projekt ändern. Diese beschäftigt sich damit, den konventionellen Designprozess in einen digitalen Prozess zu übersetzen. Es
+            ist ein digitales Tool entstanden zum Designen von Werbemedien. Zentral bei dem Programm ist „ViSyn” ein geschlechtsneutraler Agent, welcher die Nutzer*innen durch den digitalen
+            Designprozess führt. Bei der Umsetzung ist die Nutzung von KI-Modellen unausweichlich, denn es entstehen regelmäßig neue KI-Modelle, die es noch einfacher machen mit einer KI zu gestalten.
+            Die Debatte, welche Auswirkungen KI auf die Gestaltung hat und haben wird, wird immer intensiver geführt. Passend dazu habe ich die Vorteile ausgearbeitet, die solche KI-Modelle gegenüber
+            einer Mensch zu Mensch Interaktion haben können.
+          </p>
+        </section>
+
+        <section class="projectTextBox closed" class="dwwSection">
+          <h1 class="projectHeadline">Digital Workspace World</h1>
+
+          <div class="projectKeywords projectKeywordsText">
+            <a>3D</a>
+            <a>Keyvisual</a>
+          </div>
+
+          <p class="projectText">
+            Ich hatte das Vergnügen, mit dem Nordisk Büro an der Gestaltung für die "Digital Workspace World 2022" Konferenz von Matrix42 zu arbeiten. Hierbei lag mein Fokus auf der Erstellung der
+            Keyvisuals, welche die Botschaft der Konferenz visualisieren sollten. Die Konferenz bietet den Teilnehmern eine Plattform für den Austausch mit Experten und liefert Antworten und
+            Strategien zu den wichtigsten Fragen der digitalen Zukunft der Arbeit. <br />
+
+            Für die Umsetzung des Visuals wurde die vorgegebene Form in eine dreidimensionale Darstellung übersetzt, die in verschiedene Formate gebracht wurde. Es wurde ein visuelles Konzept
+            entwickelt, das die Botschaft der Konferenz auf den Punkt bringt. Das Keyvisual ist ein zentraler Bestandteil der Marketingkampagne und wird in verschiedenen digitalen und gedruckten
+            Formaten eingesetzt.
+          </p>
+        </section>
+
+        <section class="projectTextBox closed" class="hundeSection">
+          <h1 class="projectHeadline">Hunderettung Kamagne</h1>
+
+          <div class="projectKeywords projectKeywordsText">
+            <a>3D</a>
+            <a>Kampanie</a>
+            <a>Plakate</a>
+          </div>
+
+          <p class="projectText">
+            Die Plakate sind in einem Kurs entstanden, in der eine Kampagne zu einem Herzensthema erstellt werden sollte. Mein Fokus lag hierbei auf dem Imagewechsel des Adoptierens von Straßenhunden.
+            Bei der Gestaltung der Plakate habe ich mich von den Texten von Werbeplakaten diverser Partnervermittlungen inspirieren lassen, da es bei den Hunden ebenfalls um die Partnervermittlung
+            geht. Mein Ziel war es, die Botschaft ansprechend zu gestalten, um zur weiteren Informationsbeschaffung zu motivieren. <br />
+
+            Um die Plakate zu erstellen, wurden 3D gescannte Porzellan-Hunde als Modelle verwendet. Diese wurden in einer 3D-Software mit Haaren versehen. Die klare Gestaltung soll dem Thema die pure
+            Emotionalität nehmen und damit ein positiveres Image vermitteln.
+          </p>
+        </section>
+
+        <section class="projectTextBox closed" class="mischMitSection">
+          <h1 class="projectHeadline">Misch Mit! Kampanie</h1>
+
+          <div class="projectKeywords projectKeywordsText">
+            <a>Corporate Design</a>
+            <a>Bierdeckel</a>
+          </div>
+
+          <p class="projectText">
+            Im Auftrag der Organisation "misch mit!" durfte ich ein Projekt gestalten, welches sich für Menschen mit Fluchterfahrung einsetzt. Die Idee hinter dem Projekt war, Vorurteile gegenüber
+            diesen Menschen anzugehen und richtigzustellen. <br />
+
+            Ich habe Bierdeckel entworfen, auf denen Vorurteile abgebildet sind und in einem klaren, direkten Statement richtiggestellt werden. Das Ziel war es, die beiden Parteien, die Personen mit
+            vielen und wenigeren Vorurteilen gegenüber Menschen mit Fluchterfahrung, gegenüberzustellen und eine Diskussion anzuregen. <br />
+
+            Durch die klare, direkte Sprache und das auffällige Design sollen die Bierdeckel dazu beitragen, dass das Verständnis für Menschen mit Fluchterfahrung zu fördern.
+          </p>
+        </section>
+
+        <section class="projectTextBox closed" class="conConSection">
+          <h1 class="projectHeadline">CONCON x KI</h1>
+
+          <div class="projectKeywords projectKeywordsText">
+            <a>Corporate Design</a>
+            <a>KI</a>
+            <a>Event Design</a>
+          </div>
+
+          <p class="projectText">
+            Im Rahmen eines Kurses habe ich das Konzept "Think inside the new Box" für die ConCon entwickelt. Als Technologie-orientierte Veranstaltung möchte die ConCon stets mit neuen Entwicklungen
+            Schritt halten. Ich habe mich in meinem Projekt auf die Veränderungen fokussiert, die sich durch den Einsatz von Künstlicher Intelligenz (KI) ergeben können. Meine Idee war es, eine KI Box
+            zu visualisieren, die verschiedene KI-Visuals beherbergt. Die Animation der Elemente symbolisiert den Übergang von einem grafischen Raum zu einem Raum mit KI-Elementen. In der KI Booth
+            können Besucher dies selbst erleben, indem sie verschiedene Anweisungen geben, wie eine naturalistische Darstellung von Technologie, wodurch sich der Raum entsprechend verändert. Auf der
+            Bühne sind mehrere Projektionen installiert, deren Aussehen sich allmählich ändert, indem die Elemente immer weiter abstrahiert werden. Die Gestaltung der Bühne kann jeder Speaker
+            individuell anpassen. <br />
+
+            Gemeinsam mit Paul Eßer und Prof. Florian Jenett habe ich die Konzeptionen bei der ConCon 2022 in einer Booth vorgestellt. Die von uns geplante und designte Booth zeigte, wie KI in Zukunft
+            das Erscheinungsbild der ConCon verändern kann.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <div id="projectArrows" class="closed">
+      <img src="images/arrow_left.svg" id="arrow_left" onclick="lastProject()" />
+      <img src="images/arrow_right.svg" id="arrow_right" onclick="nextProject()" />
+    </div>
+
+    <div class="centerDiv" id="aboutContainerCenter">
+      <div id="aboutContainer" class="container">
+        <img src="images/Portolio_Portrait.png" id="aboutPicture" />
+
+        <h1 id="aboutHeadline">Hallo, ich bin Micha Wempe, ein Kommunikationsdesigner aus Mainz.</h1>
+        <p id="aboutText" class="aboutTextWide">
+          Ich habe meinen Abschluss in Kommunikationsdesign an der Hochschule Mainz gemacht und Erfahrungen in den Bereichen Branding, Editorial Design und digitale Produkte gesammelt. <br />
+          Ich arbeite seit sechs Jahren kreativ und habe in dieser Zeit Erfahrungen sowohl in meiner schulischen Bildung als auch in meinen Praktika und freiberuflichen Tätigkeiten gesammelt. <br />
+          Ich suche eine Position als Kommunikationsdesigner, die es mir ermöglicht, gemeinsam mit Kunden und Kollegen innovative Produkte zu gestalten.
         </p>
-        <p id="homeTextTwo" class="shortText">Suche nach einem Job</p>
+
+        <p id="aboutText" class="aboutTextNarrow">
+          Hallo, ich bin Micha Wempe, ein Kommunikationsdesigner aus Mainz. <br />
+          Ich habe meinen Abschluss in Kommunikationsdesign an der Hochschule Mainz gemacht und Erfahrungen in den Bereichen Branding, Editorial Design und digitale Produkte gesammelt. <br />
+          Ich arbeite seit sechs Jahren kreativ und habe in dieser Zeit Erfahrungen sowohl in meiner schulischen Bildung als auch in meinen Praktika und freiberuflichen Tätigkeiten gesammelt. <br />
+          Ich suche eine Position als Kommunikationsdesigner, die es mir ermöglicht, gemeinsam mit Kunden und Kollegen innovative Produkte zu gestalten.
+        </p>
       </div>
+    </div>
 
-      <div id="projectsContainer" class="container">
-        <div id="thumbnailImage">
-          <img class="thumbImage" src="images/AAAREA_2.jpeg" />
-          <img class="thumbImage" src="images/Showcase_01.png" />
-          <img class="thumbImage" src="images/ViSyn_1.png" />
-          <img class="thumbImage" src="images/matrix42_Image1.jpeg" />
-          <img class="thumbImage" src="images/Kuscheljunkie_1.png" />
-          <img class="thumbImage" src="images/MischMit_1.png" />
-          <img class="thumbImage" src="images/ConCon_7.png" />
-        </div>
-
-        <div id="projectBoxContainer">
-          <div class="projectBox" id="aaarea">
-            <h1>AAAREA Installation</h1>
-            <div class="projectKeywords">
-              <a>Animation</a>
-              <a>Installation</a>
-            </div>
-          </div>
-
-          <div class="projectBox" id="portfolio">
-            <h1>Showcase Portfolio Website</h1>
-            <div class="projectKeywords">
-              <a>Website</a>
-              <a>Portfolio</a>
-            </div>
-          </div>
-
-          <div class="projectBox" id="viSyn">
-            <h1>ViSyn – Design Prozess</h1>
-            <div class="projectKeywords">
-              <a>Corporate Design</a>
-              <a>Research</a>
-              <a>KI</a>
-            </div>
-          </div>
-
-          <div class="projectBox" id="dww">
-            <h1>Digital Workspace World</h1>
-            <div class="projectKeywords">
-              <a>3D</a>
-              <a>Keyvisual</a>
-            </div>
-          </div>
-
-          <div class="projectBox" id="hunde">
-            <h1>Hunderettung Kamagne</h1>
-            <div class="projectKeywords">
-              <a>3D</a>
-              <a>Kampanie</a>
-              <a>Plakate</a>
-            </div>
-          </div>
-
-          <div class="projectBox" id="mischMit">
-            <h1>Misch Mit! Kampanie</h1>
-            <div class="projectKeywords">
-              <a>Corporate Design</a>
-              <a>Bierdeckel</a>
-            </div>
-          </div>
-
-          <div class="projectBox" id="conCon">
-            <h1>CONCON x KI</h1>
-            <div class="projectKeywords">
-              <a>Corporate Design</a>
-              <a>KI</a>
-              <a>Event Design</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="projectPopUpContainer" class="closed">
-        <img src="images/cross.svg" class="cross" onclick="closePopUp()" />
-
-        <div id="projectPopUpLeft">
-          <section class="projectTextBox closed" class="aaareaSection">
-            <video class="projectImage" muted autoplay loop>
-              <source src="images/AAAREA_1.mp4" type="video/mp4" />
-            </video>
-            <img class="projectImage" src="images/AAAREA_2.jpeg" />
-            <img class="projectImage" src="images/AAAREA_3.jpeg" />
-          </section>
-
-          <section class="projectTextBox closed" class="portfolioSection">
-            <img class="projectImage" src="images/Showcase_01.png" />
-            <img class="projectImage" src="images/Showcase_02.png" />
-            <img class="projectImage" src="images/Showcase_03.png" />
-            <video class="projectImage" muted autoplay loop>
-              <source src="images/Showcase_04.mp4" type="video/mp4" />
-            </video>
-          </section>
-
-          <section class="projectTextBox closed" class="viSynSection">
-            <img class="projectImage" src="images/ViSyn_1.png" />
-            <img class="projectImage" src="images/ViSyn_2.png" />
-            <img class="projectImage" src="images/ViSyn_3.mov" />
-            <img class="projectImage" src="images/ViSyn_4.png" />
-            <img class="projectImage" src="images/ViSyn_5.png" />
-          </section>
-
-          <section class="projectTextBox closed" class="dwwSection">
-            <img class="projectImage" src="images/matrix42_Image1.jpeg" />
-            <img class="projectImage" src="images/matrix42_Image2.jpeg" />
-            <img class="projectImage" src="images/matrix42_Image3.jpeg" />
-            <img class="projectImage" src="images/matrix42_Image4.jpeg" />
-            <img class="projectImage" src="images/matrix42_Image5.jpeg" />
-          </section>
-
-          <section class="projectTextBox closed" class="hundeSection">
-            <img class="projectImage" src="images/Kuscheljunkie_1.png" />
-            <img class="projectImage" src="images/Kuscheljunkie_2.png" />
-            <img class="projectImage" src="images/Kuscheljunkie_3.png" />
-          </section>
-
-          <section class="projectTextBox closed" class="mischMitSection">
-            <img class="projectImage" src="images/MischMit_1.png" />
-            <img class="projectImage" src="images/MischMit_2.png" />
-            <img class="projectImage" src="images/MischMit_3.png" />
-            <img class="projectImage" src="images/MischMit_4.png" />
-          </section>
-
-          <section class="projectTextBox closed" class="conConSection">
-            <video class="projectImage" muted autoplay loop>
-              <source src="images/ConCon_1.mp4" type="video/mp4" />
-            </video>
-            <video class="projectImage" muted autoplay loop>
-              <source src="images/ConCon_2.mp4" type="video/mp4" />
-            </video>
-            <video class="projectImage" muted autoplay loop>
-              <source src="images/ConCon_3.mp4" type="video/mp4" />
-            </video>
-            <video class="projectImage" muted autoplay loop>
-              <source src="images/ConCon_4.mp4" type="video/mp4" />
-            </video>
-            <img class="projectImage" src="images/ConCon_5.png" />
-            <img class="projectImage" src="images/ConCon_6.png" />
-            <img class="projectImage" src="images/ConCon_7.png" />
-            <img class="projectImage" src="images/ConCon_8.MOV" />
-          </section>
-        </div>
-
-        <div id="projectPopUpRight">
-          <section class="projectTextBox closed" class="aaareaSection">
-            <h1 class="projectHeadline">AAAREA Installation</h1>
-
-            <div class="projectKeywords projectKeywordsText">
-              <a>Animation</a>
-              <a>Installation</a>
-            </div>
-
-            <p class="projectText">
-              Für AAAREA durfte ich eine große Red Carpet Installation vor der Alten Oper in Frankfurt am Main erstellen. Das Projekt ist bei der Arbeit beim Nordisk Büro entstanden und zielte darauf
-              ab, für die neue Event-Plattform AAAREA zu werben. AAAREA lief während der Fashion Week in Frankfurt und präsentierte dabei viele interdisziplinäre und kollaborative Formate, um die
-              neuesten Trends in der Mode zu präsentieren. <br />
-
-              Die Installation wurde auf dem roten Teppich der Markengala platziert und zog die Aufmerksamkeit der Gäste auf sich. Mit einem eindrucksvollen Design und auffälligen Details wurde die
-              Installation zum Blickfang.<br />
-
-              Meine Fähigkeiten im Bereich der Event-Gestaltung und des Markenmarketings wurden dadurch vertieft.
-            </p>
-            <div class="awards">
-              <img src="images/ADC_Logo.svg" />
-              <img src="images/ADC_Logo.svg" />
-              <img src="images/red_dot_winner.png" />
-            </div>
-          </section>
-
-          <section class="projectTextBox closed" class="portfolioSection">
-            <h1 class="projectHeadline">Showcase Portfolio Website</h1>
-
-            <div class="projectKeywords projectKeywordsText">
-              <a>Website</a>
-              <a>Portfolio</a>
-            </div>
-
-            <p class="projectText">
-              Bei diesem Projekt habe ich eine immersive Portfolio Website erstellt, die sich an einem Ausstellungsraum inspiriert. Die Idee hinter dem Design war es, die eigenen Arbeiten in einem
-              Raum zu präsentieren, in dem sich der Nutzer in seiner eigenen Geschwindigkeit bewegen kann. Die Umsetzung erfolgte mithilfe von 3D Scenen, die es der Kamera ermöglichen, durch das
-              Projekt zu navigieren. Die Geschwindigkeit des Navigierens wird durch das Scrollen der Nutzer*innen bestimmt. Auf diese Weise können die Nutzer*innen sich schnell oder langsam durch die
-              Projekte bewegen oder anhalten, um sich bestimmte Teile des Projekts genauer anzusehen.
-            </p>
-          </section>
-
-          <section class="projectTextBox closed" class="viSynSection">
-            <h1 class="projectHeadline">ViSyn – Design Prozess</h1>
-
-            <div class="projectKeywords projectKeywordsText">
-              <a>Corporate Design</a>
-              <a>Research</a>
-              <a>KI</a>
-            </div>
-
-            <p class="projectText">
-              Es gibt viele Programme, die fachfremden Menschen das Gestalten verschiedener Medien vereinfachen möchten. Meistens müssen die Nutzer*innen dabei trotzdem viele wichtige
-              Gestaltungsentscheidungen treffen. Das möchte ich mit diesem Projekt ändern. Diese beschäftigt sich damit, den konventionellen Designprozess in einen digitalen Prozess zu übersetzen. Es
-              ist ein digitales Tool entstanden zum Designen von Werbemedien. Zentral bei dem Programm ist „ViSyn” ein geschlechtsneutraler Agent, welcher die Nutzer*innen durch den digitalen
-              Designprozess führt. Bei der Umsetzung ist die Nutzung von KI-Modellen unausweichlich, denn es entstehen regelmäßig neue KI-Modelle, die es noch einfacher machen mit einer KI zu
-              gestalten. Die Debatte, welche Auswirkungen KI auf die Gestaltung hat und haben wird, wird immer intensiver geführt. Passend dazu habe ich die Vorteile ausgearbeitet, die solche
-              KI-Modelle gegenüber einer Mensch zu Mensch Interaktion haben können.
-            </p>
-          </section>
-
-          <section class="projectTextBox closed" class="dwwSection">
-            <h1 class="projectHeadline">Digital Workspace World</h1>
-
-            <div class="projectKeywords projectKeywordsText">
-              <a>3D</a>
-              <a>Keyvisual</a>
-            </div>
-
-            <p class="projectText">
-              Ich hatte das Vergnügen, mit dem Nordisk Büro an der Gestaltung für die "Digital Workspace World 2022" Konferenz von Matrix42 zu arbeiten. Hierbei lag mein Fokus auf der Erstellung der
-              Keyvisuals, welche die Botschaft der Konferenz visualisieren sollten. Die Konferenz bietet den Teilnehmern eine Plattform für den Austausch mit Experten und liefert Antworten und
-              Strategien zu den wichtigsten Fragen der digitalen Zukunft der Arbeit. <br />
-
-              Für die Umsetzung des Visuals wurde die vorgegebene Form in eine dreidimensionale Darstellung übersetzt, die in verschiedene Formate gebracht wurde. Es wurde ein visuelles Konzept
-              entwickelt, das die Botschaft der Konferenz auf den Punkt bringt. Das Keyvisual ist ein zentraler Bestandteil der Marketingkampagne und wird in verschiedenen digitalen und gedruckten
-              Formaten eingesetzt.
-            </p>
-          </section>
-
-          <section class="projectTextBox closed" class="hundeSection">
-            <h1 class="projectHeadline">Hunderettung Kamagne</h1>
-
-            <div class="projectKeywords projectKeywordsText">
-              <a>3D</a>
-              <a>Kampanie</a>
-              <a>Plakate</a>
-            </div>
-
-            <p class="projectText">
-              Die Plakate sind in einem Kurs entstanden, in der eine Kampagne zu einem Herzensthema erstellt werden sollte. Mein Fokus lag hierbei auf dem Imagewechsel des Adoptierens von
-              Straßenhunden. Bei der Gestaltung der Plakate habe ich mich von den Texten von Werbeplakaten diverser Partnervermittlungen inspirieren lassen, da es bei den Hunden ebenfalls um die
-              Partnervermittlung geht. Mein Ziel war es, die Botschaft ansprechend zu gestalten, um zur weiteren Informationsbeschaffung zu motivieren. <br />
-
-              Um die Plakate zu erstellen, wurden 3D gescannte Porzellan-Hunde als Modelle verwendet. Diese wurden in einer 3D-Software mit Haaren versehen. Die klare Gestaltung soll dem Thema die
-              pure Emotionalität nehmen und damit ein positiveres Image vermitteln.
-            </p>
-          </section>
-
-          <section class="projectTextBox closed" class="mischMitSection">
-            <h1 class="projectHeadline">Misch Mit! Kampanie</h1>
-
-            <div class="projectKeywords projectKeywordsText">
-              <a>Corporate Design</a>
-              <a>Bierdeckel</a>
-            </div>
-
-            <p class="projectText">
-              Im Auftrag der Organisation "misch mit!" durfte ich ein Projekt gestalten, welches sich für Menschen mit Fluchterfahrung einsetzt. Die Idee hinter dem Projekt war, Vorurteile gegenüber
-              diesen Menschen anzugehen und richtigzustellen. <br />
-
-              Ich habe Bierdeckel entworfen, auf denen Vorurteile abgebildet sind und in einem klaren, direkten Statement richtiggestellt werden. Das Ziel war es, die beiden Parteien, die Personen mit
-              vielen und wenigeren Vorurteilen gegenüber Menschen mit Fluchterfahrung, gegenüberzustellen und eine Diskussion anzuregen. <br />
-
-              Durch die klare, direkte Sprache und das auffällige Design sollen die Bierdeckel dazu beitragen, dass das Verständnis für Menschen mit Fluchterfahrung zu fördern.
-            </p>
-          </section>
-
-          <section class="projectTextBox closed" class="conConSection">
-            <h1 class="projectHeadline">CONCON x KI</h1>
-
-            <div class="projectKeywords projectKeywordsText">
-              <a>Corporate Design</a>
-              <a>KI</a>
-              <a>Event Design</a>
-            </div>
-
-            <p class="projectText">
-              Im Rahmen eines Kurses habe ich das Konzept "Think inside the new Box" für die ConCon entwickelt. Als Technologie-orientierte Veranstaltung möchte die ConCon stets mit neuen
-              Entwicklungen Schritt halten. Ich habe mich in meinem Projekt auf die Veränderungen fokussiert, die sich durch den Einsatz von Künstlicher Intelligenz (KI) ergeben können. Meine Idee war
-              es, eine KI Box zu visualisieren, die verschiedene KI-Visuals beherbergt. Die Animation der Elemente symbolisiert den Übergang von einem grafischen Raum zu einem Raum mit KI-Elementen.
-              In der KI Booth können Besucher dies selbst erleben, indem sie verschiedene Anweisungen geben, wie eine naturalistische Darstellung von Technologie, wodurch sich der Raum entsprechend
-              verändert. Auf der Bühne sind mehrere Projektionen installiert, deren Aussehen sich allmählich ändert, indem die Elemente immer weiter abstrahiert werden. Die Gestaltung der Bühne kann
-              jeder Speaker individuell anpassen. <br />
-
-              Gemeinsam mit Paul Eßer und Prof. Florian Jenett habe ich die Konzeptionen bei der ConCon 2022 in einer Booth vorgestellt. Die von uns geplante und designte Booth zeigte, wie KI in
-              Zukunft das Erscheinungsbild der ConCon verändern kann.
-            </p>
-          </section>
-        </div>
-      </div>
-
-      <div id="projectArrows" class="closed">
-        <img src="images/arrow_left.svg" id="arrow_left" onclick="lastProject()" />
-        <img src="images/arrow_right.svg" id="arrow_right" onclick="nextProject()" />
-      </div>
-
-      <div class="centerDiv" id="aboutContainerCenter">
-        <div id="aboutContainer" class="container">
-          <img src="images/Portolio_Portrait.png" id="aboutPicture" />
-
-          <h1 id="aboutHeadline">Hallo, ich bin Micha Wempe, ein Kommunikationsdesigner aus Mainz.</h1>
-          <p id="aboutText" class="aboutTextWide">
-            Ich habe meinen Abschluss in Kommunikationsdesign an der Hochschule Mainz gemacht und Erfahrungen in den Bereichen Branding, Editorial Design und digitale Produkte gesammelt. <br />
-            Ich arbeite seit sechs Jahren kreativ und habe in dieser Zeit Erfahrungen sowohl in meiner schulischen Bildung als auch in meinen Praktika und freiberuflichen Tätigkeiten gesammelt. <br />
-            Ich suche eine Position als Kommunikationsdesigner, die es mir ermöglicht, gemeinsam mit Kunden und Kollegen innovative Produkte zu gestalten.
-          </p>
-
-          <p id="aboutText" class="aboutTextNarrow">
-            Hallo, ich bin Micha Wempe, ein Kommunikationsdesigner aus Mainz. <br />
-            Ich habe meinen Abschluss in Kommunikationsdesign an der Hochschule Mainz gemacht und Erfahrungen in den Bereichen Branding, Editorial Design und digitale Produkte gesammelt. <br />
-            Ich arbeite seit sechs Jahren kreativ und habe in dieser Zeit Erfahrungen sowohl in meiner schulischen Bildung als auch in meinen Praktika und freiberuflichen Tätigkeiten gesammelt. <br />
-            Ich suche eine Position als Kommunikationsdesigner, die es mir ermöglicht, gemeinsam mit Kunden und Kollegen innovative Produkte zu gestalten.
-          </p>
-        </div>
-      </div>
-
-      <div id="contactContainer" class="container">
-        <div id="contactContainerOne">
-          <h1 id="contactHeadline">Ich freue mich darauf, bald mit Dir in Kontakt zu treten!</h1>
-
-          <div>
-            <h3 class="contactDiscription">E-Mail</h3>
-            <p>hello@michawempe.de</p>
-
-            <h3 class="contactDiscription">Location</h3>
-            <p>Mainz - Deutschland</p>
-          </div>
-        </div>
-
-        <div id="contactContainerTwo">
-          <form action="https://formsubmit.co/wempemicha3@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html" />
-            <h3 class="contactDiscription">Dein Name</h3>
-            <input type="text" name="name" placeholder="Name" required />
-            <h3 class="contactDiscription">Deine E-Mail</h3>
-            <input type="email" name="email" placeholder="E-Mail" required />
-            <h3 class="contactDiscription">Deine Nachricht</h3>
-            <textarea placeholder="Nachricht" rows="6" class="form-control" name="message" required></textarea>
-            <button type="submit">Nachricht senden</button>
-          </form>
-        </div>
-      </div>
-
-      <div id="footer">
-        <a
-          >Copyright &copy;
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-        </a>
+    <div id="contactContainer" class="container">
+      <div id="contactContainerOne">
+        <h1 id="contactHeadline">Ich freue mich darauf, bald mit Dir in Kontakt zu treten!</h1>
 
         <div>
-          <a href="privacy.html">Datenschutz</a>
-          <a href="imprint.html">Impressum</a>
-        </div>
+          <h3 class="contactDiscription">E-Mail</h3>
+          <p>hello@michawempe.de</p>
 
-        <div>
-          <a href="https://www.instagram.com/michawempe/">Instagram</a>
-          <a href="https://www.linkedin.com/in/micha-wempe-51a965233/">LinkedIn</a>
+          <h3 class="contactDiscription">Location</h3>
+          <p>Mainz - Deutschland</p>
         </div>
-      </div> -->
+      </div>
+
+      <div id="contactContainerTwo">
+        <form action="https://formsubmit.co/wempemicha3@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html" />
+          <h3 class="contactDiscription">Dein Name</h3>
+          <input type="text" name="name" placeholder="Name" required />
+          <h3 class="contactDiscription">Deine E-Mail</h3>
+          <input type="email" name="email" placeholder="E-Mail" required />
+          <h3 class="contactDiscription">Deine Nachricht</h3>
+          <textarea placeholder="Nachricht" rows="6" class="form-control" name="message" required></textarea>
+          <button type="submit">Nachricht senden</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="footer">
+      <a
+        >Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </a>
+
+      <div>
+        <a href="privacy.html">Datenschutz</a>
+        <a href="imprint.html">Impressum</a>
+      </div>
+
+      <div>
+        <a href="https://www.instagram.com/michawempe/">Instagram</a>
+        <a href="https://www.linkedin.com/in/micha-wempe-51a965233/">LinkedIn</a>
+      </div>
     </div>
   </body>
 
