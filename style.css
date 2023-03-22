@@ -79,7 +79,7 @@ p {
 #nav {
   display: flex;
   justify-content: flex-end;
-  right: 30px;
+  right: 40px;
   padding: 15px 0px 10px 10px;
   width: 100%;
   top: 0;
@@ -155,7 +155,6 @@ p {
   align-items: center;
   justify-content: space-between;
   height: fit-content;
-  margin: 0;
   padding: 40px 60px;
   margin: 20px 0px;
 }
@@ -233,7 +232,7 @@ p {
 .cross {
   position: absolute;
   padding: 30px;
-    right: 0px;
+  right: 0px;
   height: 40px;
 }
 
@@ -248,20 +247,20 @@ p {
 
 #arrow_left,
 #arrow_right {
-  height: 50px !important;
+  height: 50px;
 }
 
+.projectText {
+  padding-right: 15px;
+}
 #projectPopUpLeft {
   width: 50%;
-  height: 100%;
-  padding: 40px;
-  padding: 40px 20px 0px 40px;
+  margin: 40px 20px 40px 40px;
 }
 
 #projectPopUpRight {
   width: 50%;
-  height: 100%;
-  padding: 40px 40px 0px 20px;
+  margin: 100px 40px 40px 20px;
 }
 
 .projectImage {
@@ -274,7 +273,7 @@ p {
 }
 
 section {
-  height: calc(100% - 80px);
+  height: 100%;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
@@ -301,10 +300,6 @@ section::-webkit-scrollbar-thumb {
   background-color: var(--bg-color);
 }
 
-.projectTextBox {
-  padding-right: 20px;
-}
-
 .projectHeadline {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -327,12 +322,31 @@ section::-webkit-scrollbar-thumb {
 @media screen and (max-width: 1000px) {
   #projectPopUpContainer {
     flex-direction: column;
+    box-sizing: border-box;
+    width: calc(100% - 60px);
+    height: calc(100% - 150px);
+    top: 30px;
+  }
+
+  #projectArrows {
+    position: fixed;
+    bottom: 40px;
+    width: calc(100% - 60px);
+  }
+
+  #arrow_left, #arrow_right {
+    height: 43px;
+}
+
+  #projectPopUpLeft,
+  #projectPopUpRight {
+    width: calc(100% - 60px);
   }
 
   #projectPopUpLeft {
-    width: 100%;
+    width: calc(100% - 60px);
     height: 30%;
-    padding: 40px 20px 0px 40px;
+    margin: 100px 30px 30px 30px;
   }
 
   #projectPopUpLeft section {
@@ -350,13 +364,8 @@ section::-webkit-scrollbar-thumb {
   }
 
   #projectPopUpRight {
-    width: 100%;
-    height: calc(70% - 40px);
-    margin-left: 20px;
-  }
-
-  section {
-    width: calc(100% - 90px);
+    height: calc(70% - 170px);
+    margin: 10px 30px 30px 30px;
   }
 
   .projectImage {
@@ -431,6 +440,10 @@ section::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 750px) {
+  body {
+    width: calc(100% - 60px);
+  }
+
   #aboutPicture {
     align-self: start;
     object-position: 0px -50px;
@@ -455,42 +468,63 @@ section::-webkit-scrollbar-thumb {
   #homeTextTwo {
     grid-column: 1 / span 5;
   }
-
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
-    width: calc(100% - 50px);
-    margin-left: 20px;
+    width: calc(100% - 40px);
   }
-  
-  .projectBox {
-    padding: 20px 30px;
-    margin: 10px 0px;
+
+  #homeTextTwo {
+    margin-bottom: 100px;
+  }
+
+  #homeTextOne {
+    margin-top: 40vh;
   }
 
   .projectKeywords {
     display: none;
   }
 
+  .cross {
+    height: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  #projectArrows {
+    position: fixed;
+    bottom: 70px;
+  }
+  #arrow_left,
+#arrow_right {
+  height: 35px;
+}
+
   #projectPopUpContainer {
     box-sizing: border-box;
-    width: calc(100% - 50px);
+    width: calc(100% - 40px);
+    top: 20px;
+  }
+
+  #projectPopUpLeft,
+  #projectPopUpRight {
+    width: 100%;
   }
 
   #projectPopUpLeft {
-    padding: 25px 0px 0px 25px;
+    margin: 70px 20px 20px 20px;
   }
 
   #projectPopUpRight {
-    margin-left: 0px;
-    padding: 25px 25px 0px 25px;
-    height: 70%;
+    margin: 0px 20px 20px 20px;
+    height: calc(70% - 110px);
   }
 
   section {
-    width: calc(100% - 70px);
-}
+    width: calc(100% - 40px);
+  }
 
   .awards {
     flex-flow: wrap;
@@ -509,6 +543,11 @@ section::-webkit-scrollbar-thumb {
   .projectImage:last-child {
     margin-right: -20px;
   }
+
+  #projectArrows {
+    width: calc(100% - 40px);
+  }
+
   #aboutPicture {
     object-position: 0px -20px;
   }
@@ -550,6 +589,8 @@ h3 {
 input,
 textarea {
   width: 100%;
+  box-sizing: border-box;
+  border-radius: 0;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
