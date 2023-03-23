@@ -99,12 +99,6 @@ p {
   text-transform: none;
 }
 
-@media screen and (max-width: 1000px) {
-  #nav {
-    display: none;
-  }
-}
-
 #nav a:not(:last-child) {
   padding-right: 20px;
 }
@@ -198,17 +192,6 @@ p {
 
 .thumbImage.active {
   display: block;
-}
-
-@media screen and (max-width: 1200px) {
-  .projectBox {
-    flex-direction: column;
-    align-items: baseline;
-  }
-
-  .projectKeywords {
-    margin-top: 10px;
-  }
 }
 
 /* Projects Pop-Up */
@@ -321,66 +304,6 @@ section::-webkit-scrollbar-thumb {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 1000px) {
-  #projectPopUpContainer {
-    flex-direction: column;
-    box-sizing: border-box;
-    width: calc(100% - 60px);
-    height: calc(100% - 150px);
-    top: 30px;
-  }
-
-  #projectArrows {
-    position: fixed;
-    bottom: 40px;
-    width: calc(100% - 60px);
-  }
-
-  #arrow_left, #arrow_right {
-    height: 43px;
-}
-
-  #projectPopUpLeft,
-  #projectPopUpRight {
-    width: calc(100% - 60px);
-  }
-
-  #projectPopUpLeft {
-    width: calc(100% - 60px);
-    height: 30%;
-    margin: 100px 30px 30px 30px;
-  }
-
-  #projectPopUpLeft section {
-    overflow-y: none;
-    overflow-x: scroll;
-    flex-direction: row;
-    height: 100%;
-  }
-
-  #projectPopUpLeft section {
-    overflow-y: none;
-    overflow-x: scroll;
-    flex-direction: row;
-    height: 100%;
-  }
-
-  #projectPopUpRight {
-    height: calc(70% - 170px);
-    margin: 10px 30px 30px 30px;
-  }
-
-  .projectImage {
-    height: calc(100% - 20px);
-    width: fit-content;
-    margin-right: 20px;
-  }
-
-  .projectImage:last-child {
-    margin-right: 0px;
-  }
-}
-
 /* About */
 
 #aboutContainer {
@@ -414,153 +337,6 @@ section::-webkit-scrollbar-thumb {
 
 .aboutTextWide {
   display: block;
-}
-
-@media screen and (max-width: 1300px) {
-  #aboutPicture {
-    grid-column: 1 / span 3;
-  }
-
-  #aboutText {
-    align-self: start;
-    grid-column: 4 / span 4;
-    grid-row: 1 / 1;
-    margin-top: 10px;
-  }
-
-  #aboutHeadline {
-    display: none;
-  }
-
-  .aboutTextNarrow {
-    display: block;
-  }
-
-  .aboutTextWide {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  body {
-    width: calc(100% - 60px);
-  }
-
-  #aboutPicture {
-    align-self: start;
-    object-position: 0px -50px;
-    grid-column: 1 / span 7;
-    height: 400px;
-    object-fit: cover;
-  }
-
-  #aboutText {
-    margin-top: 440px;
-    grid-column: 1 / span 7;
-  }
-
-  #homeHeadline {
-    grid-column: 1 / span 7;
-    margin-top: 10px;
-  }
-  #homeTextOne {
-    grid-column: 3 / span 5;
-  }
-
-  #homeTextTwo {
-    grid-column: 1 / span 5;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  body {
-    width: calc(100% - 40px);
-  }
-
-  #homeTextTwo {
-    margin-bottom: 100px;
-  }
-
-  #homeTextOne {
-    margin-top: 40vh;
-  }
-
-  .projectKeywords {
-    display: none;
-  }
-
-  .cross {
-    height: 30px;
-    padding-right: 20px;
-    padding-top: 20px;
-  }
-
-  #projectArrows {
-    position: fixed;
-    bottom: 70px;
-  }
-  #arrow_left,
-#arrow_right {
-  height: 35px;
-}
-
-  #projectPopUpContainer {
-    box-sizing: border-box;
-    width: calc(100% - 40px);
-    top: 20px;
-  }
-
-  #projectPopUpLeft,
-  #projectPopUpRight {
-    width: 100%;
-  }
-
-  #projectPopUpLeft {
-    margin: 70px 20px 20px 20px;
-  }
-
-  #projectPopUpRight {
-    margin: 0px 20px 20px 20px;
-    height: calc(70% - 110px);
-  }
-
-  section {
-    width: calc(100% - 40px);
-  }
-
-  .awards {
-    flex-flow: wrap;
-    margin-top: 20px;
-  }
-
-  .awards img {
-    margin-top: 20px;
-  }
-
-  section::-webkit-scrollbar {
-    height: 15px;
-    width: 15px;
-  }
-
-  .projectImage:last-child {
-    margin-right: -20px;
-  }
-
-  #projectArrows {
-    width: calc(100% - 40px);
-  }
-
-  #aboutPicture {
-    object-position: 0px -20px;
-  }
-
-  #contactContainer {
-    display: block;
-  }
-
-  #contactContainerTwo {
-    margin-top: 50px;
-  }
 }
 
 /* Contact */
@@ -672,4 +448,229 @@ li {
   font-size: var(--short-text-size);
   margin-bottom: 10px;
   font-weight: 400;
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+  .projectBox {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .projectKeywords {
+    margin-top: 10px;
+  }
+
+  #aboutPicture {
+    grid-column: 1 / span 3;
+  }
+
+  #aboutText {
+    align-self: start;
+    grid-column: 4 / span 4;
+    grid-row: 1 / 1;
+    margin-top: 10px;
+  }
+
+  #aboutHeadline {
+    display: none;
+  }
+
+  .aboutTextNarrow {
+    display: block;
+  }
+
+  .aboutTextWide {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  #nav {
+    display: none;
+  }
+  
+  #projectPopUpContainer {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: calc(100% - 60px);
+    height: calc(100% - 150px);
+    top: 30px;
+  }
+
+  #projectArrows {
+    position: fixed;
+    bottom: 40px;
+    width: calc(100% - 60px);
+  }
+
+  #arrow_left, #arrow_right {
+    height: 43px;
+}
+
+  #projectPopUpLeft,
+  #projectPopUpRight {
+    width: calc(100% - 60px);
+  }
+
+  #projectPopUpLeft {
+    width: calc(100% - 60px);
+    height: 30%;
+    margin: 100px 30px 30px 30px;
+  }
+
+  #projectPopUpLeft section {
+    overflow-y: none;
+    overflow-x: scroll;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  #projectPopUpLeft section {
+    overflow-y: none;
+    overflow-x: scroll;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  #projectPopUpRight {
+    height: calc(70% - 170px);
+    margin: 10px 30px 30px 30px;
+  }
+
+  .projectImage {
+    height: calc(100% - 20px);
+    width: fit-content;
+    margin-right: 20px;
+  }
+
+  .projectImage:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    width: calc(100% - 60px);
+  }
+
+  #aboutPicture {
+    align-self: start;
+    object-position: 0px -50px;
+    grid-column: 1 / span 7;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  #aboutText {
+    margin-top: 440px;
+    grid-column: 1 / span 7;
+  }
+
+  #homeHeadline {
+    grid-column: 1 / span 7;
+    margin-top: 10px;
+  }
+  #homeTextOne {
+    grid-column: 3 / span 5;
+  }
+
+  #homeTextTwo {
+    grid-column: 1 / span 5;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: calc(100% - 40px);
+  }
+
+  #homeTextTwo {
+    margin-bottom: 100px;
+  }
+
+  #homeTextOne {
+    margin-top: 40vh;
+  }
+
+  .projectKeywords {
+    display: none;
+  }
+
+  .cross {
+    height: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  #projectArrows {
+    position: fixed;
+    bottom: 20px;
+  }
+  #arrow_left,
+#arrow_right {
+  height: 35px;
+}
+
+  #projectPopUpContainer {
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    height: calc(100% - 100px);
+    top: 20px;
+  }
+
+  #projectPopUpLeft,
+  #projectPopUpRight {
+    width: 100%;
+  }
+
+  #projectPopUpLeft {
+    margin: 70px 20px 20px 20px;
+  }
+
+  #projectPopUpRight {
+    margin: 0px 20px 20px 20px;
+    height: calc(70% - 110px);
+  }
+
+  section {
+    width: calc(100% - 40px);
+  }
+
+  .awards {
+    flex-flow: wrap;
+    margin-top: 20px;
+  }
+
+  .awards img {
+    margin-top: 20px;
+  }
+
+  section::-webkit-scrollbar {
+    height: 15px;
+    width: 15px;
+  }
+
+  .projectImage:last-child {
+    margin-right: -20px;
+  }
+
+  #projectArrows {
+    width: calc(100% - 40px);
+  }
+
+  #aboutPicture {
+    object-position: 0px -20px;
+  }
+
+  #contactContainer {
+    display: block;
+  }
+
+  #contactContainerTwo {
+    margin-top: 50px;
+  }
 }
