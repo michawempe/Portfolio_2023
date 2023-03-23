@@ -99,7 +99,7 @@ p {
   text-transform: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   #nav {
     display: none;
   }
@@ -283,6 +283,7 @@ section {
 section::-webkit-scrollbar-track {
   border-radius: 10px;
   border: solid;
+  border-width: var(--border-width);
   border-color: var(--main-color);
   background-color: var(--bg-color);
 }
@@ -296,6 +297,7 @@ section::-webkit-scrollbar {
 section::-webkit-scrollbar-thumb {
   border-radius: 10px;
   border: solid;
+  border-width: var(--border-width);
   border-color: var(--main-color);
   background-color: var(--bg-color);
 }
