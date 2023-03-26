@@ -32,6 +32,7 @@ document.addEventListener("click", function (event) {
 function display(index) {
   projectPopUpContainer.classList.remove("closed");
   projectArrows.classList.remove("closed");
+  console.log(imageSections.children[index]);
   imageSections.children[index].classList.remove("closed");
   textSections.children[index].classList.remove("closed");
   currIndex = index;
@@ -39,10 +40,11 @@ function display(index) {
   for (let i = 0; i < bodyChildren.length; i++) {
     const childElement = bodyChildren[i];
 
-    if (childElement.id === "projectPopUpContainer" || childElement.id === "nav" || childElement.id === "projectArrows") {
+    if (childElement.id === "projectPopUpContainer" || childElement.id === "projectArrows") {
       continue;
     }
     childElement.style.opacity = 0.1;
+    childElement.style.pointerEvents = "none";
   }
 }
 
@@ -55,10 +57,11 @@ function closePopUp() {
   for (let i = 0; i < bodyChildren.length; i++) {
     const childElement = bodyChildren[i];
 
-    if (childElement.id === "projectPopUpContainer" || childElement.id === "nav" || childElement.id === "projectArrows") {
+    if (childElement.id === "projectPopUpContainer" || childElement.id === "projectArrows") {
       continue;
     }
     childElement.style.opacity = 1;
+    childElement.style.pointerEvents = "auto";
   }
 }
 
@@ -67,6 +70,14 @@ function nextProject() {
     imageSections.children[currIndex].classList.add("closed");
     textSections.children[currIndex].classList.add("closed");
     currIndex++;
+    imageSections.children[currIndex].classList.remove("closed");
+    textSections.children[currIndex].classList.remove("closed");
+  }
+  else {
+    currIndex = 6;
+    imageSections.children[currIndex].classList.add("closed");
+    textSections.children[currIndex].classList.add("closed");
+    currIndex = 0;
     imageSections.children[currIndex].classList.remove("closed");
     textSections.children[currIndex].classList.remove("closed");
   }
@@ -80,12 +91,20 @@ function lastProject() {
     imageSections.children[currIndex].classList.remove("closed");
     textSections.children[currIndex].classList.remove("closed");
   }
+
+  else {
+    currIndex = 0;
+    imageSections.children[currIndex].classList.add("closed");
+    textSections.children[currIndex].classList.add("closed");
+    currIndex = 6;
+    imageSections.children[currIndex].classList.remove("closed");
+    textSections.children[currIndex].classList.remove("closed");
+  }
 }
 
 // Hovereffekt
 
 document.addEventListener("mouseover", function (event) {
-
   if (projectButtonBox.contains(event.target)) {
     thumbnailImage.style.display = "block";
     if (event.target.classList.contains("projectBox")) {
@@ -94,8 +113,7 @@ document.addEventListener("mouseover", function (event) {
       eventTarget = event.target.closest("div");
     }
     hoverIndex = Array.prototype.slice.call(projectBoxContainer.children).indexOf(eventTarget);
-  }
-  else {
+  } else {
     thumbnailImage.style.display = "none";
   }
 
@@ -103,16 +121,13 @@ document.addEventListener("mouseover", function (event) {
 });
 
 document.addEventListener("pointermove", function (event) {
-
   thumbnailImage.style.top = event.y + "px";
   thumbnailImage.style.left = event.x + "px";
-})
-
+});
 
 const children = thumbnailImage.querySelectorAll(".thumbImage");
 
 function updateActiveChild() {
-  
   children.forEach(function (child) {
     child.classList.remove("active");
   });

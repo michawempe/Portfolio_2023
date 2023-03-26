@@ -15,14 +15,15 @@
 
   <body>
     <div id="nav">
-      <a href="index.html#homeContainer">Home</a>
-      <a href="index.html#projectsContainer">Projects</a>
-      <a href="index.html#aboutContainerCenter">About</a>
-      <a href="index.html#contactContainer">Contact</a>
-      <a href="#">de | en</a>
+      <a id="logo" href="index_de.html#homeContainer">Micha Wempe</a>
+      <a href="index_de.html#homeContainer">Home</a>
+      <a href="index_de.html#projectsContainer">Projects</a>
+      <a href="index_de.html#aboutContainerCenter">About</a>
+      <a href="index_de.html#contactContainer">Contact</a>
+      <a onclick="changeLanguage('imprint_', 'en')" id="languageButton">en</a>
     </div>
     
-    <a href="index.html"><img src="images/back.svg" class="back" /></a>
+    <a href="index_de.html"><img src="images/back.svg" class="back" /></a>
 
     <div class="centerVer centerHor">
       <div class="privImpContainer">
@@ -38,7 +39,7 @@
         <h2>Kontakt</h2>
         <p>
           Telefon: 01774374604<br />
-          E-Mail: micha-wempe@gmx.de
+          E-Mail: hello@michawempe.de
         </p>
 
         <h2>EU-Streitschlichtung</h2>
@@ -53,7 +54,7 @@
 
         <h2>Quelle</h2>
         <p>
-            https://www.e-recht24.de/impressum-generator.html
+            https://www.e-recht24.de/
         </p>
       </div>
     </div>
@@ -66,8 +67,8 @@
       </a>
 
       <div>
-        <a>Datenschutz</a>
-        <a>Impressum</a>
+        <a href="privacy_de.html">Datenschutz</a>
+        <a href="imprint_de.html">Impressum</a>
       </div>
 
       <div>
@@ -76,4 +77,5 @@
       </div>
     </div>
   </body>
+  <script src="changeLang.js"></script>
 </html>

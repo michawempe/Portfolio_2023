@@ -21,7 +21,7 @@
       <a href="#projectsContainer">Projects</a>
       <a href="#aboutContainerCenter">About</a>
       <a href="#contactContainer">Contact</a>
-      <a href="#">de | en</a>
+      <a onclick="changeLanguage('index_', 'en')" id="languageButton">en</a>
     </div>
 
     <div id="homeContainer" class="container">
@@ -357,7 +357,7 @@
           <h3 class="contactDiscription">E-Mail</h3>
           <p>hello@michawempe.de</p>
 
-          <h3 class="contactDiscription">Location</h3>
+          <h3 class="contactDiscription">Standort</h3>
           <p>Mainz - Deutschland</p>
         </div>
       </div>
@@ -365,7 +365,7 @@
       <div id="contactContainerTwo">
         <form action="https://formsubmit.co/wempemicha3@gmail.com" method="POST">
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html" />
+          <input type="hidden" name="_next" value="thankyou_de.html"/>
           <h3 class="contactDiscription">Dein Name</h3>
           <input type="text" name="name" placeholder="Name" required />
           <h3 class="contactDiscription">Deine E-Mail</h3>
@@ -386,8 +386,8 @@
       </a>
 
       <div>
-        <a href="privacy.html">Datenschutz</a>
-        <a href="imprint.html">Impressum</a>
+        <a href="privacy_de.html">Datenschutz</a>
+        <a href="imprint_de.html">Impressum</a>
       </div>
 
       <div>
@@ -396,6 +396,7 @@
       </div>
     </div>
   </body>
-
+  <script src="changeLang.js"></script>
   <script src="script.js"></script>
+  
 </html>

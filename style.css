@@ -198,7 +198,7 @@ p {
 
 #projectPopUpContainer {
   position: fixed;
-  width: calc(100% - 80px);
+  width: calc(100% - 70px);
   height: calc(100% - 200px);
   top: 60px;
   border: solid;
@@ -362,6 +362,7 @@ h3 {
   text-transform: uppercase;
   font-size: var(--small-headline-size);
   margin-bottom: 3px;
+  font-weight: 400;
 }
 
 input,
@@ -449,7 +450,6 @@ li {
   margin-bottom: 10px;
   font-weight: 400;
 }
-
 
 
 
