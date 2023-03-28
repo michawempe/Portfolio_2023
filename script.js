@@ -66,7 +66,7 @@ function closePopUp() {
 }
 
 function nextProject() {
-  if (currIndex < 6) {
+  if (currIndex < 5) {
     imageSections.children[currIndex].classList.add("closed");
     textSections.children[currIndex].classList.add("closed");
     currIndex++;
@@ -74,7 +74,7 @@ function nextProject() {
     textSections.children[currIndex].classList.remove("closed");
   }
   else {
-    currIndex = 6;
+    currIndex = 5;
     imageSections.children[currIndex].classList.add("closed");
     textSections.children[currIndex].classList.add("closed");
     currIndex = 0;
@@ -96,7 +96,7 @@ function lastProject() {
     currIndex = 0;
     imageSections.children[currIndex].classList.add("closed");
     textSections.children[currIndex].classList.add("closed");
-    currIndex = 6;
+    currIndex = 5;
     imageSections.children[currIndex].classList.remove("closed");
     textSections.children[currIndex].classList.remove("closed");
   }
